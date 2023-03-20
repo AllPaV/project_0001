@@ -39,3 +39,5 @@ for product_name, product_no in titles.items():
         price = products['price']
         total_price += qnty * price
     print(product_name, qnty, 'шт., стоимость', total_price, 'руб.')
+    
+# Ну тут без нареканий
