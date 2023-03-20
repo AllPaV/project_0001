@@ -74,3 +74,19 @@ import datetime
 song_duration_pr = (a1[1] + a2[1] + a3[1])
 time = datetime.time(00, song_duration, 00).strftime('%M:%S')
 print(time, type(time))
+
+# Все хорошо, но конечно секунд при выводе мы не видим((
+# Мой вариант был таким (на примере пункта со списком A, C, D)
+
+from datetime import timedelta
+from math import modf
+from random import sample
+
+
+total_time = timedelta()
+
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Три песни звучат {total_time} минут')
