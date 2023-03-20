@@ -8,3 +8,5 @@ my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start M
 # Нельзя переопределять my_favorite_songs и запятая не должна выводиться.
 a, b, c, d, e = my_favorite_songs.split(',')
 print(a, e, b, d, c)
+
+# ну тут без вопросов) отлично
