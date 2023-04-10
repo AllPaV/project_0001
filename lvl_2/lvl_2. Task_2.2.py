@@ -27,3 +27,8 @@ def quarter_of(month):
 
 m = int(input('Введите номер месяца: '))
 print(quarter_of(m))
+
+# Можно покороче
+def quarter_of(month):
+    q = {1: (1,3), 2:(4,6), 3:(7,9), 4:(10,12)}
+    return [k for k,v in q.items() if v[0] <= month <= v[1]][0]
