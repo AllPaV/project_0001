@@ -15,3 +15,5 @@ def switch_it_up(number):
 
 number = int(input('Please enter a digit from 0 to 9: '))
 print(switch_it_up(number))
+
+# Супер!)
